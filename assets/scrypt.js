@@ -14,6 +14,8 @@ const pisces = document.querySelector('b12');
 
 const body = document.querySelector('body');
 const Aq = document.createElement('h1');
+var dailyhoro = document.createElement('p')
+
 
 
 const signAq = () => {
@@ -21,12 +23,26 @@ const signAq = () => {
     .then(response => response.json())
     
     .then(data => {
-       Aq.textContent = data[0];
+       var signdata = data; 
+       
+       var horoSign = signdata[0].sign
+       var horoCapital = horoSign.replace(/^./, horoSign[0].toUpperCase())
+       var horotext = signdata[0].text
+       var horoStr = horotext.split(/<.*?>/gm).join('')
+       console.log(horoStr)
+        console.log(horoCapital)
+
+        Aq.textContent = horoCapital
+        dailyhoro.textContent = horoStr;
+        
        body.appendChild(Aq);
+       body.appendChild(dailyhoro);
+       
        
     })
 
 }
 
 aquarius.addEventListener('click' , function () {signAq()})
+
 
