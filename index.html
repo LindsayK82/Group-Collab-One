@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="Stylesheet" type="text/css" href="assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Shalimar&family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <title>Find "your" playlist</title>
   </head>
   <header class="jumbotron d-flex flex-column align-content-center">
@@ -20,11 +21,19 @@
     <p id="currentDay" class="lead"></p>
   </header>
   <body>
+    <style>
+      body {
+        background-image: url('./assets/Test\ image.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
     <main class="container-fluid">
       <div class = "row">
           <div class="col-12 col-md-3 p-2 search-column">
-            <div class="card" style="width: 18rem;"">
-              <h3 class="card-header text-uppercase">Search By sign</h3>
+            <div class="card" style="width: 18rem;">
+              <h3 class="card-header text-uppercase">Search By Sign</h3>
               <ul class="list-group list-group-flush">
                 <button horoscope-sign="aries" class="b1">Aries--March 21-April 19</button>
                 <button horoscope-sign="taurus" class="b2">Taurus--April 20-May 20</button>
