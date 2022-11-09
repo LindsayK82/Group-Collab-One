@@ -11,15 +11,7 @@
     font-size: 50px;
     font-weight: bold;
 
-}
-
-;
-
-/* body {
-    display: flex;
-    flex:wrap;
-    background-color:lightslategray;
-}; */
+};
 
 
 #zodiac-display {
@@ -32,14 +24,14 @@
     border: 15px purple ridge;
     background-color: mediumpurple;
     font-family: 'tangerine';
-}
+};
 
 #past-search-buttons {
     display: flex;
     flex: wrap;
     padding: auto;
     margin-top: 30px;
-}
+};
 
 .b1,
 .b2,
@@ -57,6 +49,4 @@
     display: flex;
     flex: wrap;
     align-items: center;
-}
-
-;
+};
