@@ -1,3 +1,15 @@
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url("https://imgur.com/Hjv7PK9.gif");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+}
+
+
 .align-content-center {
     display: flex;
     flex: wrap;
