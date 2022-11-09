@@ -15,8 +15,7 @@ const pisces = document.querySelector('b12');
 const body = document.querySelector('body');
 const horoSignData = document.createElement('h1');
 var dailyhoro = document.createElement('p')
-dailyhoro.style.backgroundColor = 'silver';
-horoSignData.style.backgroundColor = 'silver';
+
 
 
 

@@ -13,7 +13,7 @@ The team collaborated to discover a real world problem:
 
 -As a user, I would like to select my astrological sign and find a Spotify playlist attached.
 
-The developers found free API for usage, and embedded the Spotify playlist links into the cards to be displayed when the user sleects their zodiac.
+The developers found free API for usage, and added the Spotify API to produce playlist links into the cards to be displayed when the user sleects their zodiac.
 
 ## Table of Contents (Optional)
 
