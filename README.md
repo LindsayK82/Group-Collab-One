@@ -13,7 +13,7 @@ The team collaborated to discover a real world problem:
 
 -As a user, I would like to select my astrological sign and find a Spotify playlist attached.
 
-The developers found free API for usage, and added the Spotify API to produce playlist links into the cards to be displayed when the user sleects their zodiac.
+The developers found a free horoscope API for usage, and added the YouTube API to produce playlist links into the cards to be displayed when the user selects their zodiac.
 
 ## Table of Contents (Optional)
 
@@ -28,7 +28,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 <!-- What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
-To access the project, you would need an active internet connection. Once on the site, a user would click thier astrological sign. The signs are rperesented with date ranges for easy usage. On clicking on the zodiac, a Spotify playlist would display on the page and be playable from the site.
+To access the project, you would need an active internet connection. Once on the site, a user would click their astrological sign. The signs are rperesented with date ranges for easy usage. On clicking on the zodiac, a playlist would display on the page.
 
 ## Usage
 
@@ -54,7 +54,7 @@ Daniel Nelson: https://github.com/afredknot
 Lindsay Klug: https://github.com/LindsayK82
 
 Free API for horoscope:
-Spotify API:
+YouTube API:
 
 
 ## License
