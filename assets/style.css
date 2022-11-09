@@ -13,7 +13,7 @@ body {
 .align-content-center {
     display:inline;
     float:center;
-    margin-top: -250px;
+    margin-top: 0px;
     align-items: center;
     justify-content:center;
     border: 15px purple ridge;
