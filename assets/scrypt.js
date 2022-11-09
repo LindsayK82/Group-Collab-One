@@ -1,22 +1,70 @@
 // put before api links https://russelldev-cors-anywhere.herokuapp.com/
-const aries = document.querySelector('b1');
-const taurus = document.querySelector('b2');
-const gemini = document.querySelector('b3');
-const cancer = document.querySelector('b4');
-const leo = document.querySelector('b5');
-const virgo = document.querySelector('b6');
-const libra = document.querySelector('b7');
-const scorpio = document.querySelector('b8');
-const sagittarius = document.querySelector('b9');
-const capricorn = document.querySelector('b10');
-const aquarius = document.querySelector('.b11');
-const pisces = document.querySelector('b12');
+const aries = document.getElementById('b1');
+const taurus = document.getElementById('b2');
+const gemini = document.getElementById('b3');
+const cancer = document.getElementById('b4');
+const leo = document.getElementById('b5');
+const virgo = document.getElementById('b6');
+const libra = document.getElementById('b7');
+const scorpio = document.getElementById('b8');
+const sagittarius = document.getElementById('b9');
+const capricorn = document.getElementById('b10');
+const aquarius = document.getElementById('.b11');
+const pisces = document.getElementById('b12');
 
 const body = document.querySelector('body');
 const horoSignData = document.createElement('h1');
 var dailyhoro = document.createElement('p')
 horoSignData.style.backgroundColor = 'silver';
 dailyhoro.style.backgroundColor = 'silver';
+var PLaquarius = 'PLjOdFlSYCsZa8T4TBnNiPDKMJjtBejzlJ'
+var PLcapricorn ='PLjOdFlSYCsZaNSNnF7p0AVbJKUWbf1FpT'
+var PLleo = 'PLjOdFlSYCsZa5YvAqk6IAoTq9A5oFEnTQ'
+var PLpisces = 'PLjOdFlSYCsZZDRX2lblTVtzTJs81-N_hs'
+var PLtaurus = 'PLjOdFlSYCsZYpqRhAQcvVnVVJ0K0e6eGu'
+var PLsagittarius = 'PLjOdFlSYCsZbJ_qhkcdq-Rj86xBlgog_4'
+var PLvirgo = 'PLjOdFlSYCsZb2H8y8sMPzdIweDX5O0Meb'
+var PLgemini = 'PLjOdFlSYCsZZewgfb00iHkhl2eRFuJ2LV'
+var PLaries = 'PLjOdFlSYCsZZbEbwSJBumdP3nVfpoK8Dd'
+var PLlibra = 'PLjOdFlSYCsZb4klE2-YGA1rS-gavOpxZL'
+var PLcancer = 'PLjOdFlSYCsZaWxuQ5ZcWNGbl2PFk9SqV2'
+var PLscorpio = 'PLjOdFlSYCsZY0Gps3un7gz0E1i3hS6dF1'
+var options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': 'b162444521msh0778d5dface58a5p1bf93ejsn1f79ea6325b3',
+    'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+  }
+};
+
+const zizi = (zodiac, string) => {
+fetch(`https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${zodiac}&part=snippet&maxResults=50`, options)
+  .then(response => response.json())
+  
+  .then(response => {
+  var playlist = response.items[0].snippet.playlistId
+  var link = `https://www.youtube.com/playlist?list=${playlist}`
+  var anchor = document.createElement('a')
+  anchor.setAttribute('href', link)
+  anchor.setAttribute('target', "_blank")
+  anchor.innerHTML = string
+  body.appendChild(anchor)
+  })
+};
+
+
+taurus.addEventListener("click", function () {zizi(PLaries, "Aries Playlist") })
+taurus.addEventListener("click", function () {zizi(PLtaurus, "Taurus Playlist") })
+gemini.addEventListener("click", function () {zizi(PLgemini, "Gemini Playlist") })
+cancer.addEventListener("click", function () {zizi(PLcancer, "Cancer Playlist") })
+leo.addEventListener("click", function () {zizi(PLleo, "Leo Playlist") })
+virgo.addEventListener("click", function () {zizi(PLvirgo, "Virgo Playlist") })
+sagittarius.addEventListener("click", function () {zizi(PLsagittarius , "Sagittarius Playlist") })
+pisces.addEventListener("click", function () {zizi(PLpisces, "Pisces Playlist") })
+libra.addEventListener("click", function () {zizi(PLlibra, "Libra Playlist") })
+scorpio.addEventListener("click", function () {zizi(PLscorpio, "Scorpio Playlist") })
+capricorn.addEventListener("click", function () {zizi(PLcapricorn, "Capricorn Playlist") })
+  
 
 
 
@@ -367,3 +415,4 @@ const signPi = () => {
 document.querySelectorAll('.b12').forEach(item => {
     item.addEventListener('click', function () { signPi() })
 })
+
