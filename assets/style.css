@@ -11,12 +11,11 @@ body {
 
 
 .align-content-center {
-    display: flex;
-    flex: wrap;
+    display:inline;
+    float:center;
+    margin-top: -250px;
     align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 20px;
+    justify-content:center;
     border: 15px purple ridge;
     background-color: mediumpurple;
     font-family: 'shalimar';
@@ -24,6 +23,13 @@ body {
     font-weight: bold;
 
 };
+
+.b1 {
+    display:flex;
+    flex:wrap;
+    padding-inline: 40px;
+    margin-left: 200px;
+}
 
 
 #zodiac-display {
@@ -61,4 +67,5 @@ body {
     display: flex;
     flex: wrap;
     align-items: center;
+    padding: 40px;
 };
