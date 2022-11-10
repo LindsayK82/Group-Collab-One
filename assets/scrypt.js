@@ -25,7 +25,7 @@ var PLtaurus = 'PLjOdFlSYCsZYpqRhAQcvVnVVJ0K0e6eGu'
 var PLsagittarius = 'PLjOdFlSYCsZbJ_qhkcdq-Rj86xBlgog_4'
 var PLvirgo = 'PLjOdFlSYCsZb2H8y8sMPzdIweDX5O0Meb'
 var PLgemini = 'PLjOdFlSYCsZZewgfb00iHkhl2eRFuJ2LV'
-var PLaries = 'PLjOdFlSYCsZZbEbwSJBumdP3nVfpoK8Dd'
+var PLaries = 'PLjOdFlSYCsZbkyebxcOii6AyxshEOkeUU'
 var PLlibra = 'PLjOdFlSYCsZb4klE2-YGA1rS-gavOpxZL'
 var PLcancer = 'PLjOdFlSYCsZaWxuQ5ZcWNGbl2PFk9SqV2'
 var PLscorpio = 'PLjOdFlSYCsZY0Gps3un7gz0E1i3hS6dF1'
@@ -53,7 +53,7 @@ fetch(`https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${zodiac}&par
 };
 
 
-taurus.addEventListener("click", function () {zizi(PLaries, "Aries Playlist") })
+aries.addEventListener("click", function () {zizi(PLaries, "Aries Playlist") })
 taurus.addEventListener("click", function () {zizi(PLtaurus, "Taurus Playlist") })
 gemini.addEventListener("click", function () {zizi(PLgemini, "Gemini Playlist") })
 cancer.addEventListener("click", function () {zizi(PLcancer, "Cancer Playlist") })
@@ -93,7 +93,7 @@ const signAr = () => {
 
 }
 
-document.querySelectorAll('.b1').forEach(item => {
+document.querySelectorAll('#b1').forEach(item => {
     item.addEventListener('click', function () { signAr() })
 })
 
@@ -122,7 +122,7 @@ const signTa = () => {
 
 }
 
-document.querySelectorAll('.b2').forEach(item => {
+document.querySelectorAll('#b2').forEach(item => {
     item.addEventListener('click', function () { signTa() })
 })
 
@@ -151,7 +151,7 @@ const signGe = () => {
 
 }
 
-document.querySelectorAll('.b3').forEach(item => {
+document.querySelectorAll('#b3').forEach(item => {
     item.addEventListener('click', function () { signGe() })
 })
 
@@ -180,7 +180,7 @@ const signCa = () => {
 
 }
 
-document.querySelectorAll('.b4').forEach(item => {
+document.querySelectorAll('#b4').forEach(item => {
     item.addEventListener('click', function () { signCa() })
 })
 
@@ -209,7 +209,7 @@ const signLeo = () => {
 
 }
 
-document.querySelectorAll('.b5').forEach(item => {
+document.querySelectorAll('#b5').forEach(item => {
     item.addEventListener('click', function () { signLeo() })
 })
 
@@ -238,7 +238,7 @@ const signVi = () => {
 
 }
 
-document.querySelectorAll('.b6').forEach(item => {
+document.querySelectorAll('#b6').forEach(item => {
     item.addEventListener('click', function () { signVi() })
 })
 
@@ -267,7 +267,7 @@ const signLi = () => {
 
 }
 
-document.querySelectorAll('.b7').forEach(item => {
+document.querySelectorAll('#b7').forEach(item => {
     item.addEventListener('click', function () { signLi() })
 })
 
@@ -296,7 +296,7 @@ const signSc = () => {
 
 }
 
-document.querySelectorAll('.b8').forEach(item => {
+document.querySelectorAll('#b8').forEach(item => {
     item.addEventListener('click', function () { signSc() })
 })
 
@@ -325,7 +325,7 @@ const signSa = () => {
 
 }
 
-document.querySelectorAll('.b9').forEach(item => {
+document.querySelectorAll('#b9').forEach(item => {
     item.addEventListener('click', function () { signSa() })
 })
 
@@ -354,7 +354,7 @@ const signCap = () => {
 
 }
 
-document.querySelectorAll('.b10').forEach(item => {
+document.querySelectorAll('#b10').forEach(item => {
     item.addEventListener('click', function () { signCap() })
 })
 
@@ -383,7 +383,7 @@ const signAq = () => {
 
 }
 
-document.querySelectorAll('.b11').forEach(item => {
+document.querySelectorAll('#b11').forEach(item => {
     item.addEventListener('click', function () { signAq() })
 })
 
@@ -412,7 +412,7 @@ const signPi = () => {
 
 }
 
-document.querySelectorAll('.b12').forEach(item => {
+document.querySelectorAll('#b12').forEach(item => {
     item.addEventListener('click', function () { signPi() })
 })
 
