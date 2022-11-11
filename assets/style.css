@@ -68,4 +68,11 @@ body {
     flex: wrap;
     align-items: center;
     padding: 40px;
+    background-color: silver;
+    color: silver;
 };
+
+.h4 {
+    font-family: 'tangerine';
+    align-items: center;
+}

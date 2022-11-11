@@ -14,9 +14,15 @@ const pisces = document.getElementById('b12');
 
 const body = document.querySelector('body');
 const horoSignData = document.createElement('h1');
-var dailyhoro = document.createElement('p')
-horoSignData.style.backgroundColor = 'silver';
+var dailyhoro = document.createElement('h4')
+//horoSignData.style.backgroundColor = 'transparent';
 dailyhoro.style.backgroundColor = 'silver';
+horoSignData.style.textAlign = 'center';
+dailyhoro.style.textAlign= 'center';
+horoSignData.style.color= 'silver';
+//dailyhoro.style.color= 'gold';
+//dailyhoro.style.fontFamily= 'fantasy';
+
 var PLaquarius = 'PLjOdFlSYCsZa8T4TBnNiPDKMJjtBejzlJ'
 var PLcapricorn ='PLjOdFlSYCsZaNSNnF7p0AVbJKUWbf1FpT'
 var PLleo = 'PLjOdFlSYCsZa5YvAqk6IAoTq9A5oFEnTQ'
