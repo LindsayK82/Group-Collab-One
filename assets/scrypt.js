@@ -15,13 +15,12 @@ const pisces = document.getElementById('b12');
 const body = document.querySelector('body');
 const horoSignData = document.createElement('h1');
 var dailyhoro = document.createElement('h4')
-//horoSignData.style.backgroundColor = 'transparent';
+
 dailyhoro.style.backgroundColor = 'silver';
 horoSignData.style.textAlign = 'center';
 dailyhoro.style.textAlign= 'center';
 horoSignData.style.color= 'silver';
-//dailyhoro.style.color= 'gold';
-//dailyhoro.style.fontFamily= 'fantasy';
+
 
 var PLaquarius = 'PLjOdFlSYCsZa8T4TBnNiPDKMJjtBejzlJ'
 var PLcapricorn ='PLjOdFlSYCsZaNSNnF7p0AVbJKUWbf1FpT'
@@ -36,26 +35,26 @@ var PLlibra = 'PLjOdFlSYCsZb4klE2-YGA1rS-gavOpxZL'
 var PLcancer = 'PLjOdFlSYCsZaWxuQ5ZcWNGbl2PFk9SqV2'
 var PLscorpio = 'PLjOdFlSYCsZY0Gps3un7gz0E1i3hS6dF1'
 var options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': 'b162444521msh0778d5dface58a5p1bf93ejsn1f79ea6325b3',
-    'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
-  }
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': 'b162444521msh0778d5dface58a5p1bf93ejsn1f79ea6325b3',
+        'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+    }
 };
 
 const zizi = (zodiac, string) => {
-fetch(`https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${zodiac}&part=snippet&maxResults=50`, options)
+    fetch(`https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${zodiac}&part=snippet&maxResults=50`, options)
   .then(response => response.json())
   
   .then(response => {
-  var playlist = response.items[0].snippet.playlistId
-  var link = `https://www.youtube.com/playlist?list=${playlist}`
-  var anchor = document.createElement('a')
-  anchor.setAttribute('href', link)
-  anchor.setAttribute('target', "_blank")
-  anchor.innerHTML = string
-  body.appendChild(anchor)
-  })
+      var playlist = response.items[0].snippet.playlistId
+      var link = `https://www.youtube.com/playlist?list=${playlist}`
+      var anchor = document.createElement('a')
+      anchor.setAttribute('href', link)
+      anchor.setAttribute('target', "_blank")
+      anchor.innerHTML = string
+      body.appendChild(anchor)
+    })
 };
 
 
@@ -70,33 +69,36 @@ pisces.addEventListener("click", function () {zizi(PLpisces, "Pisces Playlist") 
 libra.addEventListener("click", function () {zizi(PLlibra, "Libra Playlist") })
 scorpio.addEventListener("click", function () {zizi(PLscorpio, "Scorpio Playlist") })
 capricorn.addEventListener("click", function () {zizi(PLcapricorn, "Capricorn Playlist") })
-  
+
 
 
 
 const signAr = () => {
     fetch(`https://russelldev-cors-anywhere.herokuapp.com/https://any.ge/horoscope/api/?sign=aries&type=daily&day=today`)
-        .then(response => response.json())
-
-        .then(data => {
-            var signdata = data;
-
-            var horoSign = signdata[0].sign
-            var horoCapital = horoSign.replace(/^./, horoSign[0].toUpperCase())
-            var horotext = signdata[0].text
-            var horoStr = horotext.split(/<.*?>/gm).join('')
-            console.log(horoStr)
-            console.log(horoCapital)
-
-            horoSignData.textContent = horoCapital
-            dailyhoro.textContent = horoStr;
-
-            body.appendChild(horoSignData);
-            body.appendChild(dailyhoro);
-
-
-        })
-
+    .then(response => response.json())
+    
+    .then(data => {
+        var signdata = data;
+        
+        var horoSign = signdata[0].sign
+        var horoCapital = horoSign.replace(/^./, horoSign[0].toUpperCase())
+        var horotext = signdata[0].text
+        var horoStr = horotext.split(/<.*?>/gm).join('')
+        console.log(horoStr)
+        console.log(horoCapital)
+        
+        horoSignData.textContent = horoCapital
+        dailyhoro.textContent = horoStr;
+        
+        body.appendChild(horoSignData);
+        body.appendChild(dailyhoro);
+        
+        localStorage.setItem('horoCapital', horoCapital)
+        localStorage.setItem('horoStr', horoStr)
+       
+        
+    })
+    
 }
 
 document.querySelectorAll('#b1').forEach(item => {
@@ -122,6 +124,9 @@ const signTa = () => {
 
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
+
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
 
         })
@@ -152,7 +157,8 @@ const signGe = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
-
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
         })
 
 }
@@ -181,6 +187,8 @@ const signCa = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
@@ -210,6 +218,8 @@ const signLeo = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
@@ -239,6 +249,8 @@ const signVi = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
@@ -268,6 +280,8 @@ const signLi = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
@@ -297,7 +311,8 @@ const signSc = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
-
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
         })
 
 }
@@ -326,6 +341,8 @@ const signSa = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
@@ -355,6 +372,8 @@ const signCap = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
@@ -384,6 +403,8 @@ const signAq = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
@@ -413,6 +434,8 @@ const signPi = () => {
             body.appendChild(horoSignData);
             body.appendChild(dailyhoro);
 
+            localStorage.setItem('horoCapital', horoCapital)
+            localStorage.setItem('horoStr', horoStr)
 
         })
 
