@@ -9,7 +9,7 @@ const libra = document.getElementById('b7');
 const scorpio = document.getElementById('b8');
 const sagittarius = document.getElementById('b9');
 const capricorn = document.getElementById('b10');
-const aquarius = document.getElementById('.b11');
+const aquarius = document.getElementById('b11');
 const pisces = document.getElementById('b12');
 
 const body = document.querySelector('body');
@@ -67,6 +67,10 @@ capricorn.addEventListener("click", function () {zizi(PLcapricorn, "Capricorn Pl
   
 
 
+
+aquarius.addEventListener("click", function () {
+    zizi(PLaquarius, "Aquarius Playlist") 
+});
 
 const signAr = () => {
     fetch(`https://russelldev-cors-anywhere.herokuapp.com/https://any.ge/horoscope/api/?sign=aries&type=daily&day=today`)
