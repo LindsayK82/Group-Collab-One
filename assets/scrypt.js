@@ -117,7 +117,7 @@ const signAr = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -132,7 +132,7 @@ const signAr = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -162,7 +162,7 @@ const signTa = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -177,7 +177,7 @@ const signTa = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -207,7 +207,7 @@ const signGe = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -222,7 +222,7 @@ const signGe = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -251,7 +251,7 @@ const signCa = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -266,7 +266,7 @@ const signCa = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -296,7 +296,7 @@ const signLeo = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -311,7 +311,7 @@ const signLeo = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -341,7 +341,7 @@ const signVi = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -356,7 +356,7 @@ const signVi = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -386,7 +386,7 @@ const signLi = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -401,7 +401,7 @@ const signLi = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -431,7 +431,7 @@ const signSc = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -446,7 +446,7 @@ const signSc = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -476,7 +476,7 @@ const signSa = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -491,7 +491,7 @@ const signSa = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -521,7 +521,7 @@ const signCap = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -536,7 +536,7 @@ const signCap = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -566,7 +566,7 @@ const signAq = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -581,7 +581,7 @@ const signAq = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -611,7 +611,7 @@ const signPi = () => {
       horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -626,7 +626,7 @@ const signPi = () => {
 
       horoSignData.appendChild(horoImg);
 
-      body.appendChild(horoSignData);
+      // body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
