@@ -28,17 +28,23 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 <!-- What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running. -->
 
-To access the project, you will need an active internet connection. Once on the site, a user clicks their astrological sign. Hovering over a zodiac button with your mouse will show the date ranges for the zodiac. On clicking on the zodiac, a playlist displays on the page.
+To access the project, you will need an active internet connection. Once on the site, a user clicks their astrological sign. Hovering over a zodiac button with your mouse will show the date ranges for the zodiac. On clicking on the zodiac, a playlist link displays on the page.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+<!-- Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax: -->
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+On opening the site, the user is presented with a dynamic page featuring buttons to click based on the selected zodiac sign:
+
+![Site](./assets/Images/Site-SS.png)
+ 
+
+Once a zodiac is clicked (in this case, Cancer), a playlist link is displayed, an image with some attributes of the sign, and the daily horoscope:
+
+![Horoscope](./assets/Images/Site-SS-2.png)
+
 
 ## Credits
 
