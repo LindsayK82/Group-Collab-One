@@ -21,6 +21,7 @@ dailyhoro.style.backgroundColor = 'silver';
 horoSignData.style.textAlign = 'center';
 dailyhoro.style.textAlign = 'center';
 horoSignData.style.color = 'silver';
+var horoImg = document.createElement('img');
 
 var PLaquarius = 'PLjOdFlSYCsZa8T4TBnNiPDKMJjtBejzlJ';
 var PLcapricorn = 'PLjOdFlSYCsZaNSNnF7p0AVbJKUWbf1FpT';
@@ -129,7 +130,6 @@ const signAr = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -174,7 +174,7 @@ const signTa = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -219,7 +219,7 @@ const signGe = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -263,7 +263,7 @@ const signCa = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -308,7 +308,7 @@ const signLeo = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -353,7 +353,7 @@ const signVi = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -398,7 +398,7 @@ const signLi = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -443,7 +443,7 @@ const signSc = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -488,7 +488,7 @@ const signSa = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -533,7 +533,7 @@ const signCap = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -578,7 +578,7 @@ const signAq = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
@@ -623,7 +623,7 @@ const signPi = () => {
       localStorage.setItem('horoCapital', horoCapital);
       localStorage.setItem('horoStr', horoStr);
 
-      var horoImg = document.createElement('img');
+    // 
       horoImg.classList = 'card-body text-center';
       horoImg.setAttribute(
         'src',
