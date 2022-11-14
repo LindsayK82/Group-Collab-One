@@ -9,7 +9,7 @@ const libra = document.getElementById('b7');
 const scorpio = document.getElementById('b8');
 const sagittarius = document.getElementById('b9');
 const capricorn = document.getElementById('b10');
-const aquarius = document.getElementById('.b11');
+const aquarius = document.getElementById('b11');
 const pisces = document.getElementById('b12');
 
 const body = document.querySelector('body');
@@ -91,6 +91,10 @@ scorpio.addEventListener('click', function () {
 });
 capricorn.addEventListener('click', function () {
   zizi(PLcapricorn, 'Capricorn Playlist');
+});
+
+aquarius.addEventListener("click", function () {
+    zizi(PLaquarius, "Aquarius Playlist") 
 });
 
 const signAr = () => {
