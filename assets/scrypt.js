@@ -1,4 +1,6 @@
 // put before api links https://russelldev-cors-anywhere.herokuapp.com/
+
+// varaiables listed below //
 const aries = document.getElementById('b1');
 const taurus = document.getElementById('b2');
 const gemini = document.getElementById('b3');
@@ -42,6 +44,8 @@ var options = {
 var anchor = document.createElement('a');
 body.appendChild(anchor);
 
+// youtube music api fuction //
+
 const zizi = (zodiac, string) => {
   fetch(
     `https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=${zodiac}&part=snippet&maxResults=50`,
@@ -59,7 +63,7 @@ const zizi = (zodiac, string) => {
     });
 };
 
-
+// event listners for playlists //
 aries.addEventListener('click', function () {
   zizi(PLaries, 'Aries Playlist');
 });
@@ -98,6 +102,8 @@ aquarius.addEventListener("click", function () {
     zizi(PLaquarius, "Aquarius Playlist") 
 });
 
+// fuction for horoscope data api and event listners below //
+
 const signAr = () => {
   fetch(
     `https://russelldev-cors-anywhere.herokuapp.com/https://any.ge/horoscope/api/?sign=aries&type=daily&day=today`
@@ -114,10 +120,10 @@ const signAr = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -132,7 +138,7 @@ const signAr = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -159,10 +165,10 @@ const signTa = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -177,7 +183,7 @@ const signTa = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -204,10 +210,10 @@ const signGe = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -222,7 +228,7 @@ const signGe = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -248,10 +254,10 @@ const signCa = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -266,7 +272,7 @@ const signCa = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -293,10 +299,10 @@ const signLeo = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -311,7 +317,7 @@ const signLeo = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -338,10 +344,10 @@ const signVi = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -356,7 +362,7 @@ const signVi = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -383,10 +389,10 @@ const signLi = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -401,7 +407,7 @@ const signLi = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -428,10 +434,10 @@ const signSc = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -446,7 +452,7 @@ const signSc = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -473,10 +479,10 @@ const signSa = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -491,7 +497,7 @@ const signSa = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -518,10 +524,10 @@ const signCap = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -536,7 +542,7 @@ const signCap = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -563,10 +569,10 @@ const signAq = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -581,7 +587,7 @@ const signAq = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };
@@ -608,10 +614,10 @@ const signPi = () => {
       console.log(horoStr);
       console.log(horoCapital);
 
-      horoSignData.textContent = horoCapital;
+    //   horoSignData.textContent = horoCapital;
       dailyhoro.textContent = horoStr;
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
 
       localStorage.setItem('horoCapital', horoCapital);
@@ -626,7 +632,7 @@ const signPi = () => {
 
       horoSignData.appendChild(horoImg);
 
-      // body.appendChild(horoSignData);
+      body.appendChild(horoSignData);
       body.appendChild(dailyhoro);
     });
 };

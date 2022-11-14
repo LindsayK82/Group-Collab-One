@@ -11,10 +11,11 @@ body {
 
 
 .align-content-center {
-    display:flex;
-    flex: wrap;
-    margin: 30px;
+    display:inline;
+    float: center;
+    margin-top: 0px;
     align-items: center;
+    justify-content: center;
     justify-content:space-evenly;
     background-color: transparent;
     font-family: 'shalimar';
@@ -34,15 +35,15 @@ h4 {
 };
 
 
-/* .b1 {
+.b1 {
     display:flex;
     flex:wrap;
     padding-inline: 40px;
     margin-left: 200px;
-}; */
+}; 
 
 
-/* #zodiac-display {
+#zodiac-display {
     display: flex;
     flex: wrap;
     align-items: center;
@@ -52,14 +53,14 @@ h4 {
     border: 15px purple ridge;
     background-color: mediumpurple;
     font-family: 'tangerine';
-}; */
-/* 
+}; 
+
 #past-search-buttons {
     display: flex;
     flex: wrap;
     padding: auto;
     margin-top: 30px;
-}; */
+}; 
 
 
 #b1,
