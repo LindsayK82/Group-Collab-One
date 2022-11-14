@@ -55,6 +55,7 @@ const zizi = (zodiac, string) => {
       anchor.setAttribute('target', '_blank');
       anchor.innerHTML = string;
       body.appendChild(anchor);
+      anchor.style.cssText('15px')
     });
 };
 
