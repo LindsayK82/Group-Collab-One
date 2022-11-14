@@ -39,6 +39,8 @@ var options = {
     'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
   },
 };
+var anchor = document.createElement('a');
+body.appendChild(anchor);
 
 const zizi = (zodiac, string) => {
   fetch(
@@ -50,12 +52,10 @@ const zizi = (zodiac, string) => {
     .then((response) => {
       var playlist = response.items[0].snippet.playlistId;
       var link = `https://www.youtube.com/playlist?list=${playlist}`;
-      var anchor = document.createElement('a');
       anchor.setAttribute('href', link);
       anchor.setAttribute('target', '_blank');
       anchor.innerHTML = string;
-      body.appendChild(anchor);
-      anchor.style.cssText('15px')
+      
     });
 };
 
