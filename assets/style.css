@@ -77,11 +77,11 @@ body {
     align-items: center;
 }
 a{
-    font-size: 25px;
+    font-size: 40px;
     display: flex;
-    flex:wrap;
     margin: auto,auto;
     color: aliceblue;
+    justify-content: center;
 }
 a:hover{
     color: blueviolet;
