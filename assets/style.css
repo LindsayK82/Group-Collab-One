@@ -88,3 +88,13 @@ h4 {
     font-family: 'tangerine';
     align-items: center;
 }
+a{
+    font-size: 25px;
+    display: flex;
+    flex:wrap;
+    margin: auto,auto;
+    color: aliceblue;
+}
+a:hover{
+    color: blueviolet;
+}
