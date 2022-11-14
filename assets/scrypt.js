@@ -634,4 +634,4 @@ document.querySelectorAll('#b12').forEach((item) => {
   item.addEventListener('click', function () {
     signPi();
   });
-});
+})
